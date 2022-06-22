@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 카톡으로 공유했을 때 제목, 설명, 이미지 -->
+    <meta property="og:title" content="김민경 - 프로필 링크">
+    <meta property="og:description" content="Hi Immingooo">
+    <meta property="og:image" content="woman.png">
+    <script type="text/javascript"
+        src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
+    <title>르탄이 - 프로필 링크</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+        }
+        body {
+            background-color: #44398A;
+        }
+
+        .profile {
+            width: 100px;
+            height: 100px;
+
+            /* background-color: green; */
+            border-radius: 100%;
+
+            border: 2px solid white;
+
+            /* 사진 코드 항상 같이 다니는 3줄 */
+            background-image: url('woman.png');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .main {
+            color: white;
+            font-size: 20px;
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .sub {
+            color: white;
+            font-size: 14px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .wrap {
+            /* 구역은 안보여서 항상 색넣어서 하기 */
+            /* background-color: green; */
+            /* 가운데로 온다는건 내 양쪽 여백을 쭉 미는 것 */
+            width: 300px;
+            margin: 30px auto 0px auto; /* 마진 시계방향으로 */
+            /* 내용물 중앙정령은 display: flex; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap > a {
+            width: 300px;
+            height: 50px;
+
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            font-weight: bold;
+            color: #44398A;
+
+            /* 내용물 가운데로 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+
+            box-shadow: 3px 3px 0px 0px black; /* 오른쪽 밑으로 얼마나 갈건지 3px 3px, 꼬리의 길이, 꼬리의 선명도 */
+        }
+        .wrap > a:hover {
+            background-color: #f2f2f2;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile"></div>
+        <h1 class="main">김민경</h1>
+        <p class="sub">ISTJ</p>
+        <a target="_blank" href="https://spartacodingclub.kr/">인스타그램</a>
+        <a target="_blank" href="https://hanghae99.spartacodingclub.kr/">밍하밍하 유튜브</a>
+        <a target="_blank" href="https://chang.spartacodingclub.kr/">창업 부트캠프 창</a>
+        <a target="_blank" href="https://ddingdong.spartacodingclub.kr/">띵동코딩</a>
+    </div>
+</body>
+</html>
